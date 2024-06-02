@@ -3,9 +3,9 @@ import java.util.List;
 public interface BookOperations {
     void addBook(Book book);
 
-    void removeBook(String isbn);
+    void removeBook(Book book);
 
-    void updateBook(String isbn, Book updatedBook);
+    void updateBook(Book oldBook, Book newBook);
 
     List<Book> getBooks();
 }
